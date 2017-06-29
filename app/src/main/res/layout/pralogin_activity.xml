@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prelogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prelogin.Prelogin">
+
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9">
+    </View>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgprelogin1"
+        android:background="#16A085"
+        android:visibility="visible"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgprelogin2"
+        android:src="#9B59B6"
+        android:visibility="gone"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgprelogin3"
+        android:src="#34495E"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerprelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@+id/btnLinkToLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/btn_login_rounded"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:text="Login"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_skip"
+                android:background="@null"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

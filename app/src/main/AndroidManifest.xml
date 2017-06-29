@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pptik.startup.ghvmobile">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="pptik.startup.ghvmobile.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="pptik.startup.aksicepattanggapmobile.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GCM Permissions - End here -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Base.AppTheme">
+
+        <!-- meta untuk facebook-->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <!--
+        <activity
+            android:name=".MainMenu"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        -->
+        <activity
+            android:name=".Prelogin.SplashScreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/Base.AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prelogin.Prelogin"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditProgram"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Guest.GuestListProgram"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Guest.GuestMenu"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".Detailmateri"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Guest.DaftarRelawan"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Relawan.Relawan_Program"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Relawan.RelawanMenu"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".SubmitProgram"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Relawan.ProfileRelawan"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.Admin"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.ApprovalRelawan"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.ApprovalRelawanDetail"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.ApprovalProgram"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.ApprovalProgramDetail"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.DisapprovRelawan"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Admin.DisapprovProgram"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".SubmitedProgram"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainMenu"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImageGallery"
+            android:label="@string/title_activity_image_gallery"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.AppTheme.NoActionBar"></activity>
+        <!-- Register Broadcast receiver -->
+
+        <receiver
+            android:name=".Service.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.prgguru.example" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Register Service -->
+        <service android:name=".Service.GCMNotificationIntentService" />
+        <!--
+        <service
+            android:name=".Service.NotificationsListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        -->
+
+
+    </application>
+
+</manifest>

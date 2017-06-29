@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:id="@+id/lv_relawn_name" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Large Text"
+                android:textColor="@color/gray3"
+                android:id="@+id/lv_relawan_join_date"
+                android:layout_above="@+id/v_grid"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_below="@id/lv_relawn_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Large Text"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/lv_relawan_email"
+                android:layout_gravity="left|center_horizontal|right" />
+                <View
+                    android:id="@+id/v_grid"
+                    android:layout_below="@id/lv_relawan_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:paddingBottom="5dp"
+                    android:background="@android:color/darker_gray"/>
+
+
+
+</RelativeLayout>

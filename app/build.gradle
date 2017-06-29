@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion '25.0.1'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "pptik.startup.ghvmobile"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+
+    repositories {
+        maven { url 'http://repo1.maven.org/maven2' }
+        maven { url "https://jitpack.io" }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'junit:junit:4.12'
+    //gms play service
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    compile 'com.google.android.gms:play-services:9.4.0'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+    //gms end
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'org.slf4j:slf4j-android:1.6.1-RC1'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'net.qiujuer.genius:ui:2.0.0-beta4'
+    compile 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    compile 'com.github.MKergall:osmbonuspack:v5.8.1'
+    compile 'com.wang.avi:library:1.0.5'
+    compile 'com.mikepenz:iconics-core:2.5.9@aar'
+    compile 'com.mikepenz:community-material-typeface:+@aar'
+    compile 'com.mikepenz:ionicons-typeface:+@aar'
+    compile('com.mikepenz:materialdrawer:5.2.8@aar') {
+        transitive = true
+    }
+    compile 'com.mikepenz:google-material-typeface:2.2.0.1.original@aar'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile "com.android.support:support-v4:+"
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+
+    //
+    compile 'com.marvinlabs:android-slideshow-widget:0.5.+@aar'
+    compile 'com.marvinlabs:android-slideshow-widget-picasso-plugin:0.5.+@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.bignerdranch.android:recyclerview-multiselect:0.2'
+    compile 'com.android.support:multidex:1.0.1'
+    // facebook
+
+}
+apply plugin: 'com.google.gms.google-services'

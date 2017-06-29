@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:paddingBottom="5dp">
+            <TextView
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:textStyle="bold"
+                android:id="@+id/fragment_program_start"
+                android:layout_gravity="left"
+                android:gravity="right" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textAllCaps="true"
+                android:text="Large Text"
+                android:id="@+id/lv_program_name"
+                android:textColor="@color/red_500"
+                android:textStyle="bold|italic"
+                android:gravity="center_vertical|left" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/actlighorange"
+                android:paddingBottom="8dp" />
+
+
+            <TextView
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textAllCaps="true"
+                android:text="Medium Text"
+                android:id="@+id/fragment_program_supervisor"
+                android:layout_gravity="left|center_horizontal|right"
+                android:textColor="@color/gray3" />
+            <TextView
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Medium Text"
+                android:id="@+id/lv_program_lokasi"
+                android:layout_gravity="left|center_horizontal|right"
+                android:textColor="@color/gray3" />
+
+</LinearLayout>

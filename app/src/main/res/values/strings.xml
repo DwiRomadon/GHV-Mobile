@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">GHV Mobile</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_password2">The password is not same</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- Strings related to daftar relawan -->
+
+    <string name="prompt_name">Nama Lengkap</string>
+    <string name="prompt_nick">Nama Panggilan</string>
+    <string name="prompt_tl">Tempat Kelahiran</string>
+    <string name="prompt_tgl">Tanggal Lahir</string>
+    <string name="prompt_agama">Agama</string>
+    <string name="prompt_anak">Jumlah Anak</string>
+    <string name="prompt_identitas">Nomor Identitas</string>
+    <string name="prompt_alamat">Alamat</string>
+    <string name="prompt_kota">Kota</string>
+    <string name="prompt_Provinsi">Provinsi</string>
+    <string name="prompt_telp">Nomor Telepon Rumah</string>
+    <string name="prompt_hp">Nomor HP</string>
+    <string name="prompt_aktivitas">Aktivitas / Pekerjaan saat ini</string>
+    <string name="prompt_nama_relasi">Nama Kerabat</string>
+    <string name="prompt_hp_kerabat">Nomor HP Kerabat</string>
+    <string name="prompt_minat">Minat atau Hobi</string>
+    <string name="prompt_keahlian">Keahlian atau Skill yang dimiliki</string>
+    <string name="prompt_pengalaman">Pengalaman Organisasi</string>
+    <string name="prompt_motivasi">Motivasi Bergabung</string>
+    <string name="title_activity_test123">Test123</string>
+
+
+    <string-array name="pendidikan_array">
+        <item>--Not Selected--</item>
+        <item>Sekolah Dasar</item>
+        <item>Sekolah Menengah Pertama</item>
+        <item>Sekolah Menengah Atas</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string name="title_activity_edit_program">EditProgram</string>
+    <string name="title_activity_image_gallery">ImageGallery</string>
+    <string name="login">login</string>
+    <!-- Strings related to daftar rewalan end -->
+
+
+    <!-- main.xml-->
+
+    <!--  kml_main.xml -->
+
+    <!--  kml_style.xml -->
+
+    <!--  items_list.xml -->
+
+    <!--  kml_styles.xml -->
+
+    <!-- map_menu-->
+
+    <!-- option_menu-->
+
+    <!-- kml_item_menu-->
+
+    <!-- kml_option_menu-->
+
+    <!-- style_item_menu-->
+
+    <!-- style_option_menu-->
+    <!-- facebook app id -->
+    <string name="facebook_app_id">224400054646541</string>
+</resources>

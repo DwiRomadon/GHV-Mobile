@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/admin_menu_activity"
+    android:background="@color/gray1"
+    tools:context=".User_Admin.Admin">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mainMap_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/pinDetail"
+        android:background="#00e7fdff"
+        android:visibility="gone">
+        <ImageButton
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_up_content"
+            android:id="@+id/closeFragment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            />
+    </LinearLayout>
+</RelativeLayout>

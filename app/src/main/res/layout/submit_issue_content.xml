@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/gray1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/submit_issue_activity"
+    tools:context=".SubmitProgram">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/picture_path_program"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:background="@drawable/rounderd_border"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Foto"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:id="@+id/upload_photo_program"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp" />
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/submit_program_nama"
+                    android:hint="Nama Program atau Issue"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/submit_program_lokasi"
+                    android:hint="Lokasi Diadakan"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:id="@+id/submit_program_mulai"
+                    android:hint="Tanggal Dimulai" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:id="@+id/submit_program_akhir"
+                    android:hint="Tanggal Berakhir" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/submit_program_supervisor"
+                    android:hint="Penanggung Jawab atau Supervisor"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="50"
+                    android:id="@+id/submit_program_deskripsi"
+                    android:hint="Deskripsi"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/submit_program_keterangan"
+                    android:hint="Keterangan"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:background="@drawable/bg_common_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Program"
+                android:textColor="@color/gray1"
+                android:id="@+id/submit_program_btnsubmit"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
